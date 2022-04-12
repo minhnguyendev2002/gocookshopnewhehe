@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt đồ ăn</title>
+    <meta name="description" content="Chào mừng đến với GoFood, chúc các bản một ngày vui vẻ tràn đầy sức khỏe">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/pages/product/product.css">
+    <link rel="stylesheet" href="/assets/style/style.css">
+</head>
+<body>
+    <header class="header header-active" id="header">
+    </header>
+
+    <div class="product-main">
+        <div class="body-bacgr"></div>
+        <div class="container my-container">
+            <div class="row">
+                <div class="col-xl-2 col-lg-3 col-0">
+                    <div class="nav-menu scroll-nav">
+                        <h3>Ăn gì nàooo</h3>
+                        <span class="close-menu" id="close-menu-food"><i class="fas fa-times"></i></span>
+                        <ul class="options-foods">
+                            <li onclick="option('food')" class="option-food food show-check">
+                                <span class="option-item">Đồ ăn</span>
+                                <span class="check"><span><i class="fas fa-check"></i></span></span>
+                            </li>
+                            <li onclick="option('drink')" class="option-food drink">
+                                <span class="option-item">Đồ uống</span>
+                                <span class="check"><span><i class="fas fa-check"></i></span></span>
+                            </li>
+                            <li onclick="option('cake')" class="option-food cake">
+                                <span class="option-item">Bánh kem</span>
+                                <span class="check"><span><i class="fas fa-check"></i></span></span>
+                            </li>
+                            <li onclick="option('fastfood')" class="option-food fastfood">
+                                <span class="option-item">Fast Food</span>
+                                <span class="check"><span><i class="fas fa-check"></i></span></span>
+                            </li>
+                            <li onclick="option('bunpho')" class="option-food bunpho">
+                                <span class="option-item">Bún phở</span>
+                                <span class="check"><span><i class="fas fa-check"></i></span></span>
+                            </li>
+                            <li onclick="option('comhop')" class="option-food comhop">
+                                <span class="option-item">Cơm hộp</span>
+                                <span class="check"><span><i class="fas fa-check"></i></span></span>
+                            </li>
+                            <li onclick="option('giavi')" class="option-food giavi">
+                                <span class="option-item">Các loại gia vị</span>
+                                <span class="check"><span><i class="fas fa-check"></i></span></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-10 col-lg-9 col-12">
+                    <div class="product-container">
+                        <span id="show-menu-food" class="menu-food"><i class="fas fa-bars"></i></span>
+                        <h3 class="your-selec">Đồ ăn</h3>
+                        <div class="product-list" id="root">
+                            <div class="row" id="my-list-prd">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer id="footer">
+    </footer>
+
+    <div id="myModal"></div>
+
+    <script src="../../assets/Data/allProduct.js"></script> 
+    <script src="/assets/Data/productData.js"></script>
+    <script src="/assets/js/header.js"></script>
+    <script src="/assets/js/index.js"></script>
+    <script src="/assets/js/footer.js"></script>
+    <script src="../../assets/js/modal.js"></script>
+    <script src="./product.js"></script>
+</body>
+</html>

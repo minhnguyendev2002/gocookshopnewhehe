@@ -1,0 +1,199 @@
+body {
+    background-color: #fdfdfd;
+}
+.header {
+    box-shadow: rgba(149, 157, 165, 0.5) 5px 5px 10px;
+    background-color: #FFF;
+    position: fixed;
+    transition: .2s ease;
+}
+.header .header-logo span {
+    color: var(--primary-color);
+}
+.header ul li a {
+    color: var(--text-color);
+}
+.header .account span {
+    color: var(--text-color);
+}
+.my-container {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.nav-menu {
+    position: relative;
+    transition: .3s ease;
+    background-color: #FFF;
+}
+.options-foods li {
+    margin: 20px 0;
+    cursor: pointer;
+    transition: .2s ease;
+}
+.options-foods li:last-child {
+    margin-top: 20px;
+    padding: 10px 0;
+    border-top: 1px solid rebeccapurple;
+}
+.options-foods .option-item {
+    display: inline-block;
+    min-width: 160px;
+}
+.check {
+    height: 18px;
+    width: 18px;
+    display: inline-flex;
+    transform: translateY(2px);
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    position: relative;
+    display: none;
+    float: right;
+}
+.show-check .check {
+    display: inline-block;
+}
+.check > span {
+    position: absolute;
+    font-size: 18px;
+    top: -3px;
+    right: 5px;
+    color: var(--primary-color);
+}
+.nav-menu h3,
+.your-selec {
+    font-size: 24px;
+    position: relative;
+    border-bottom: 1px solid rebeccapurple;
+    padding: 10px 0;
+    color: var(--primary-color);
+}
+.your-selec {
+    margin-left: 40px;
+    width: max-content;
+    display: inline-block;
+}
+
+.menu-food {
+    font-size: 20px;
+    width: 30px;
+    height: 35px;
+    color: #7bc144;
+    display: none;
+}
+
+
+.product-list {
+    margin-top: 20px;
+    padding: 0 0px 0 40px;
+}
+.product {
+    border: 1px solid rgba(194, 194, 194, 0.7);
+    transition: .2s ease;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    background-color: var(--white-color);
+    overflow: hidden;
+}
+.product:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.product div img {
+    width: 100%;
+}
+.product-infor {
+    padding: 10px;
+}
+.product-infor h4 {
+    color: var(--titel-color);
+    font-size: 17px;
+    display:-webkit-box;
+    -webkit-line-clamp:1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+}
+.product-infor p {
+    color: rgba(0, 0, 0, 0.8);
+    display:-webkit-box;
+    -webkit-line-clamp:1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+    margin-bottom: 10px;
+}
+.price {
+    display: block;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+
+.close-menu {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1;
+    transition: .3s ease;
+    display: none;
+}
+.close-menu:hover {
+    background-color: #f2f2f2;
+}
+
+
+@keyframes showMenufood {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes closeMenufood {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
+@media (max-width: 992px) {
+    .col-0 {
+        width: 0%;
+    }
+    .nav-menu {
+        position: fixed;
+        background-color: #FFF;
+        box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 4px;
+        height: 100vh;
+        z-index: 6;
+        padding: 20px 20px;
+        width: 300px;
+        left: 0px;
+        top: 0px;
+        transform: translateX(-100%);
+    }
+    .your-selec {
+        margin-left: 0;
+    }
+    .product-list {
+        padding-left: 0px;
+    }
+    .menu-food {
+        display: inline-block;
+    }
+}

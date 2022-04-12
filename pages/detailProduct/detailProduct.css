@@ -1,0 +1,311 @@
+.header {
+    box-shadow: rgb(149 157 165 / 30%) 3px 3px 8px;
+}
+.detail-main {
+    margin-top: 180px;
+    background-color: #FFF;
+    padding-bottom: 120px;
+}
+.header .header-logo span {
+    color: var(--primary-color);
+}
+.header ul li a {
+    color: var(--text-color);
+}
+.header .account span {
+    color: var(--text-color);
+}
+.my-product {
+    display: flex;
+    flex-wrap: wrap;
+}
+.product-img {
+    width: 45%;
+    overflow: hidden;
+}
+.product-img img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid rgb(221, 221, 221);
+}
+.product-infor {
+    flex: 1;
+    padding-left: 20px;
+}
+.product-infor .product-type {
+    font-weight: 500;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+    display: block;
+}
+.product-infor ul {
+    display: flex;
+    align-items: center;
+}
+.product-infor h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.product-infor h2 {
+    font-size: 18px;
+}
+.product-infor h2 span:nth-child(1) {
+    margin-left: 5px;
+}
+/* .product-infor h2 span:nth-child(2) {
+    color: #0288d1;
+} */
+.product-infor > p {
+    font-size: 17px;
+    margin: 10px 0;
+}
+.product-infor p:nth-child(5) {
+    color: var(--primary-color);
+    cursor: pointer;
+}
+.product-infor > p span {
+    font-weight: 500;
+    margin-right: 5px;
+}
+.product-infor > ul li span {
+    color: var(--primary-color);
+}
+.product-infor > ul li {
+    margin-right: 5px;
+}
+
+.derection ul {
+    margin: 15px 0 0;
+    padding: 5px 0;
+}
+.derection ul li {
+    margin-right: 20px;
+}
+.haveincart .fa-check {
+    color: var(--primary-color);
+    margin-left: 5px;
+}
+
+.derection ul li:nth-child(1) button {
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    color: #FFF;
+    cursor: pointer;
+    transition: .2s ease;
+}
+.haveincart {
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 10px;
+    background-color: var(--white-color) !important;
+    border: 2px solid var(--primary-color) !important;
+    color: var(--primary-color) !important;
+    cursor: pointer;
+    transition: .2s ease;
+}
+.derection ul li:nth-child(1) button:hover {
+    background-color: #FFF;
+    color: var(--primary-color);
+}
+
+.options {
+    background-color: #FFF;
+    padding: 10px;
+    border-radius: 5px;
+}
+.option {
+    margin: 0px 0 20px;
+    cursor: pointer;
+    font-weight: 400;
+}
+.option span {
+    display: inline-block;
+    padding: 1px 6px;
+    border-radius: 4px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.option .ops-active {
+    background-color: var(--primary-color);
+    color: #FFF;
+}
+
+
+
+/* .more-main {
+    background-color: #f2f2f2;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 60px;
+}
+.more-product {
+    margin-top: 0px;
+}
+.more-product h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.prds-more {
+    padding: 15px 25px;
+    border-radius: 10px;
+    background-color: #FFF;
+    position: relative;
+}
+.list-more-prd {
+    overflow-y: scroll;
+    max-height: 450px;
+}
+.list-more-prd::-webkit-scrollbar {
+    display: none;
+}
+.prd-more {
+    display: flex;
+    margin-bottom: 20px;
+}
+.prd-more div:nth-child(1) {
+    width: 20%;
+}
+.prd-more div:nth-child(1) img {
+    width: 100%;
+    border-radius: 5px;
+}
+.prd-more div:nth-child(2) {
+    margin-left: 15px;
+    flex: 1;
+}
+.prd-more div:nth-child(2) h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.prd-more div:nth-child(2) > span {
+    display: flex;  
+    justify-content: space-between;
+}
+.prd-more div:nth-child(2) > span > span {
+    color: #0288d1;
+    font-weight: 500;
+    position: relative;
+    right: -18px;
+}
+.prd-more div:nth-child(2) > span p span {
+    font-weight: 500;
+}
+.prd-more > span {
+    color: rgb(255, 29, 29);
+    font-size: 20px;
+    position: relative;
+    cursor: pointer;
+} */
+
+.list-cart {
+    max-height: 300px;
+    overflow-y: scroll;
+}
+.list-cart::-webkit-scrollbar {
+    display: none;
+}
+.my-cart {
+    padding: 10px 15px;
+    background-color: #FFF;
+    border-radius: 10px;
+}
+.my-cart h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+.product-cart {
+    display: flex;
+    padding: 5px 0;
+    margin-bottom: 15px;
+}
+.cart-image {
+    width: 30%;
+}
+.cart-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+.cart-infor {
+    flex: 1;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.cart-infor div {
+    display: flex;
+    justify-content: space-between;
+}
+.cart-infor div span {
+    cursor: pointer;
+    padding: 2px 5px;
+}
+.cart-infor h4 {
+    font-size: 18px;
+    display: inline-block;
+    display:-webkit-box;
+    -webkit-line-clamp:1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+}
+.cart-infor ul {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+    position: relative;
+    top: -5px;
+}
+.cart-infor ul input {
+    border: none;
+    outline: none;
+    border:1px solid #e0e0e0;
+    padding: 0px 2px;
+    text-align: center;
+    margin-left: 3px;
+    border-radius: 5px;
+}
+.cart-infor ul input:focus {
+    border-color: var(--primary-color);
+}
+
+.checkout-box {
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid rebeccapurple;
+}
+.checkout {
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    color: #FFF;
+    cursor: pointer;
+    transition: .2s ease;
+}
+.checkout:hover {
+    background-color: #FFF;
+    color: var(--primary-color);
+}
+
+
+@media (max-width: 992px) {
+    .product-img {
+        width: 100%;
+    }
+    .product-infor {
+        width: 100%;
+        padding-left: 0;
+        margin-top: 25px;
+    }
+    .options,.prds-more,.my-cart {
+        margin-top: 20px;
+    }
+}

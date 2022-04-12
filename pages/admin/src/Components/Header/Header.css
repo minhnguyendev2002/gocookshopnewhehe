@@ -1,0 +1,94 @@
+.Header-container {
+    padding: 20px 45px;
+    height: 100px;
+    border-bottom: 1px solid #dddddd;
+    width: calc(100vw - 280px);
+    position: fixed;
+    margin-left: 280px;
+    background-color: #FFFFFF;
+    z-index: 99;
+}
+.Header-container h2 {
+    font-size: 34px;
+    font-weight: 700;
+}
+.header-toast {
+    margin: 0px 10px;
+    padding: 0px 15px;
+}
+.toast-img {
+    height: 60px;
+    object-fit: cover;
+}
+.header-toast > li > span {
+    padding: 10px;
+    margin: 0px 20px;
+    cursor: pointer;
+}
+.header-toast li > span {
+    font-size: 32px;
+    color: #636363;
+    position: relative;
+}
+.header-toast li > span::after {
+   content:"";
+   position: absolute;
+   width: 12px;
+   height: 12px;
+   background-color: #fe6333;
+   border-radius: 50%;
+}
+.Header-container .user {
+    padding-left: 10px;
+    border-left: 1px solid #dddddd;
+}
+.Header-container .user img {
+    width: 55px;
+    height: 55px;
+    border-radius: 5px;
+    margin: 0px 15px;
+}
+.Header-container .user div h3 {
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.header-toast > li ul {
+    width: 360px;
+    border: 1px solid #dddddd;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background-color: #FFF;
+    right: 0px;
+    top: 70px;
+    overflow: hidden;
+    border-radius: 10px;
+    display: none;
+}
+.header-toast > li ul li {
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    transition: .3s ease;
+}
+.header-toast > li ul li:last-child {
+    margin-bottom: 0px;
+}
+.header-toast > li ul li:hover {
+    background-color: #fe6333;
+}
+.header-toast > li ul li a {
+    color: #111;
+}
+.header-toast > li ul li:hover a {
+    color: #fff;
+}
+.header-toast li ul img {
+    width: 55px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+.header-toast li ul h4 {
+    font-size: 16px;
+    font-weight: 700;
+}

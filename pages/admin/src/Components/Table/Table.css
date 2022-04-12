@@ -1,0 +1,104 @@
+.pagination-box {
+    margin: 15px 0px;
+}
+.rs-input {
+    position: relative;
+    top: -8px;
+}
+.add-member button, .submit-btn {
+    border: 2px solid #fe6333;
+    background-color: #FFF;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: .3s ease;
+}
+.add-member button:hover, .submit-btn:hover {
+    background-color: #fe6333;
+    color: #FFF;
+}
+.action-cell i {
+    font-size: 18px;
+}
+.action-cell i.edit {
+    color: #fe6333;
+}
+.action-cell i.save {
+    color: #51f221;
+}
+.status-null {
+    color: #fff;
+    background-color: #c8c8c8;
+    font-weight: 700;
+    padding: 8px 15px;
+    border-radius: 5px;
+    line-height: 18px;
+    width: 100px;
+}
+.status-true {
+    color: #68CF29;
+    font-weight: 700;
+    background-color: #ecfae4;
+    padding: 8px 15px;
+    border-radius: 5px;
+    line-height: 18px;
+    width: 100px;
+}
+.status-false {
+    color: #FFAB2D;
+    background-color: #fff0da;
+    font-weight: 700;
+    padding: 8px 15px;
+    border-radius: 5px;
+    line-height: 18px;
+    width: 100px;
+}
+.change-filter {
+    margin-bottom: 25px;
+}
+.change-filter span {
+    border: 2px solid #fe6333;
+    background-color: #FFF;
+    padding: 10px 15px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: .3s ease;
+    cursor: pointer;
+}
+.change-filter span:hover, span.active-filter {
+    background-color: #fe6333;
+    color: #FFF;
+}
+.rs-table-row {
+    position: absolute;
+    z-index: 1 !important;
+}
+.action-button {
+    z-index: 2 !important;
+}
+.modal-box .col-8 > span {
+    color: #fe6333;
+    font-weight: 700;
+    font-size: 18px;
+}
+.add-member-form div {
+    margin-bottom: 12px;
+    position: relative;
+}
+.add-member-form div p {
+    position: absolute;
+    font-size: 12px;
+    color:#fe6333;
+    bottom: -8px;
+    left: 10px;
+}
+.add-member-form div input, .search-input input {
+    outline: none;
+    width: 100%;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #dddddd;
+}

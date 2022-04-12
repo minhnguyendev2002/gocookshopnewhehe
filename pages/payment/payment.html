@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt đồ ăn</title>
+    <meta name="description" content="Chào mừng đến với GoFood, chúc các bản một ngày vui vẻ tràn đầy sức khỏe">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../../assets/style/style.css">
+    <link rel="stylesheet" href="./Payment.css">
+</head>
+<body>
+
+
+
+        <header class="header header-active" id="header">
+        </header>
+
+        <div class="Intro-Product">
+            <div class="container Intro-content">
+                <div class="Intro-titles Flex-elm">
+                    <div class="Intro-titles_text">
+                        <h1>Thanh Toán</h1>
+                    </div>
+                    <div class="Intro-titles_space">
+                        <span> </span>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-image">
+                <img src="http://pawsitive.bold-themes.com/buddy/wp-content/uploads/sites/2/2019/07/white_bottom_wave_01.png" alt="/">
+            </div>
+        </div>
+
+        <form action="result.html" method="get" enctype="text/plain">
+            <div class="container PD-Main">
+                <div class="Payment-form Flex-elm">
+                    <div class="Infor-Customer">
+                        <div class="Name-Customer mb-35">
+                            <label class="label-style" for="name">Họ và Tên <span>*...</span></label>
+                            <div class="My-input">
+                                <input class="input-style check-text" id="name" type="text" name="Name" required>
+                                <span class="check-null error-text">Tên không hợp lệ</span>
+                            </div>
+                        </div>
+                        <div class="Phone-Customer mb-35">
+                            <label class="label-style" for="phone">Số điện thoại <span>*...</span></label>
+                            <div class="My-input">
+                                <input class="input-style check-phone" id="phone" type="text" name="phone" required>
+                                <span class="check-null error-phone">Số điện thoại bạn nhập không hợp lệ</span>
+                            </div>
+                        </div>
+
+                        <div class="Adress-Customer mb-35">
+                            <label class="label-style" for="Section-menu">Quận<span>*...</span></label>
+                            <div class="Country mb-35" id="Section-menu">
+                                <div class="Country-section">
+                                    <input class="input-style check-text" id="conscious" type="text" name="conscious" required>
+                                    <span class="check-null error-text">Vui lòng nhập đúng ô này</span>
+                                    <span id="down"><i class="fas fa-chevron-down"></i></span>
+                                    <div class="Your-section-box" id="mySection-menu">
+                                        <ul id="Your-section">
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- <div class="Flex-elm" style="justify-content: space-between;">
+                                <div class="district">
+                                    <label class="label-style" for="district">Quận, Huyện<span>*...</span></label>
+                                    <div class="My-input">
+                                        <input class="input-style check-text" id="district" type="text" name="district-1" required>
+                                        <span class="check-null error-text">Không được để trống</span>
+                                    </div>
+                                </div>
+                                <div class="commune">
+                                    <label class="label-style" for="commune">Phường, Xã<span>*...</span></label>
+                                    <div class="My-input">
+                                        <input class="input-style check-text" id="commune" type="text" name="district-2" required>
+                                        <span class="check-null error-text">Không được để trống</span>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+
+                        <div class="Adress-details">
+                            <label class="label-style" for="Adress-details">Địa chỉ chi tiết<span>*...</span></label>
+                            <div class="My-input">
+                                <textarea name="Địa chỉ chi tiết" id="Adress-details" cols="30" rows="10"></textarea>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="Cart">
+                        <h2>Giỏ hàng của bạn</h2>
+                        <div class="Your-Cart" id="Your-Cart">
+                            <div id='Empty-Cart' class="emty-Cart">
+                                <img src="../../assets/img/payment/empty_cart.png" alt="/">
+                            </div>
+                            
+                        </div>
+                        
+                        <div id="Total-product" class="Total-product">
+                            <h3">Thành tiền: </h3>
+                            <span id="price"></span>
+                        </div>
+
+                        <div class="payment-methods" style="margin: 35px 0;">
+                            <h3 style="margin-bottom: 10px;">Phương Thức Thanh Toán</h3>
+                            <ul>
+                                <li onclick="Payment(0)" class="Pay-methods border-active">
+                                    <img src="../../assets/img/payment/cashless-payment.svg" alt="/">
+                                    <span>Ví điện tử</span>
+                                </li>
+                                <li onclick="Payment(1)" class="Pay-methods ">
+                                    <img src="../../assets/img/payment/payment.svg" alt="/">
+                                    <span>Tiền mặt</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="CheckOut-btn" style="text-align: center;">
+                            <button type="submit" id="Check-out" class="My-Button btn-hover btn-3">Đặt Hàng</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        
+        <footer id="footer">
+        </footer>
+    
+        <div id="myModal"></div>
+        
+        <script src="../../assets/Data/allProduct.js"></script>
+        <script src="../../assets/js/header.js"></script>
+        <script src="../../assets/js/index.js"></script>
+        <script src="../../assets/js/footer.js"></script>
+        <script src="../../assets/js/modal.js"></script>
+        <script src="./Payment.js"></script>
+</body>
+</html>

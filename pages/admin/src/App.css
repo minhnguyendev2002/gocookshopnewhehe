@@ -1,0 +1,95 @@
+.KPI-box {
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: #FFF;
+}
+.KPI-box h3 {
+    font-size: 18px;
+    font-weight: 700;
+    padding-left: 20px;
+    border-left: 5px solid #fe6333;
+    line-height: 24px;
+}
+.KPI-box .KPI-action {
+    margin: 15px 0px;
+}
+.KPI-box h4 {
+    margin: 15px 0px 0px;
+    font-size: 28px;
+    font-weight: 700;
+}
+.KPI-box > span {
+    margin-top: 5px;
+}
+.KPI-action span {
+    display: inline-block;
+    background-color: #FFF;
+    border: 2px solid #fe6333;
+    padding: 5px 10px;
+    margin: 0px 10px;
+    color: #111;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+.KPI-action span:hover, .Kpi-active {
+    background-color: #fe6333 !important;
+    color: #FFF !important;
+}
+.circle-item {
+    margin: 20px 0px 10px;
+}
+.chart-line-box {
+    padding: 0px 35px 0px;
+}
+
+.related-food h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 24px;
+}
+.related-food li {
+    margin-bottom: 12px;
+}
+.related-food li:last-child {
+    margin-bottom: 0px;
+}
+.related-food li > span {
+    width: 25%;
+    font-size: 40px;
+    color: #ccc;
+}
+.related-food li > div {
+    flex: 1;
+}
+.related-food li > div div span {
+    padding: 0px 5px;
+}
+.related-food li > div div span:nth-child(2) {
+    font-weight: 600;
+}
+.related-food li > div h4 {
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.related-food li > img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+.related-food {
+    margin-top: 35px;
+    background-color: #FFF;
+    padding: 20px 10px;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.doughnut {
+    width: 300px;
+    margin: auto;
+}

@@ -1,0 +1,54 @@
+.nav-container {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    width: 280px;
+    max-width: 280px;
+    padding: 30px 0px;
+    overflow-y: hidden;
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
+}
+.nav-container > a {
+    font-size: 50px;
+    font-weight: 900;
+    height: 75px;
+    color: #111;
+}
+.nav-container > a:hover {
+    color: #111;
+}
+.nav-container > a span {
+    color: #fe6333;
+}
+.nav-option {
+    padding: 20px 35px;
+    height: calc(100vh - 75px);
+}
+.nav-option > div {
+    bottom: 80px;
+    font-size: 24px;
+    transform: translateX(50%);
+    right: 50%;
+    cursor: pointer;
+}
+.nav-option > div:hover {
+    color: #fe6333;
+    transition: all .4s;
+}
+.nav-option ul li a {
+    padding: 10px 0px;
+    color: #111;
+    margin: 15px 0px;
+    border-radius: 24px;
+    font-weight: 600;
+    transition: all .4s;
+    text-transform: capitalize;
+}
+.nav-option ul li a:hover {
+    background-color: #fe6333;
+    color: #FFF;
+}
+.nav-option ul li a.active-nav {
+    background-color: #fe6333;
+    color: #FFF;
+}

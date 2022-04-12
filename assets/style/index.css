@@ -1,0 +1,329 @@
+.order-food {
+    background: url("../img/Home/22.png") no-repeat;
+    background-position:  center;
+    object-fit: contain;
+    background-size: cover;
+    padding: 120px 0 80px;
+}
+.order-content .order-menu {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 500;
+    display: none;
+    margin-bottom: 20px;
+}
+.order-content .order-menu i {
+    margin-left: 10px;
+}
+.order-content {
+    padding-top: 20px;
+}
+.order-content > h2 {
+    color: var(--white-color);
+    font-size: 28px;
+}
+.order-content > p {
+    margin: 10px 0;
+    color: var(--white-color);
+}
+.order-search {
+    width: 80%;
+    border: 1px solid rgb(199, 199, 199);
+    display: block;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 30px;
+    background-color: #FFF;
+}
+.order-search button {
+    padding: 0 5px;
+    float: right;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.order-search input[type="text"] {
+    border: none;
+    outline: none;
+    width: 92%;
+}
+.order-search input[type="text"]::placeholder {
+    color: var(--text-color);
+}
+.order-option {
+    margin-top: 40px;
+}
+.order-option > h3 {
+    color: var(--white-color);
+    font-size: 18px;
+}
+.order-option ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+.order-option a {
+    padding: 5px 20px;
+    margin: 12px 15px 12px 0px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    transition: .2s ease;
+    color: var(--white-color);
+}
+.order-option a:hover {
+    background-color: var(--white-color);
+    color: var(--text-color);
+}
+.download-app {
+    margin-top: 20px;
+}
+.download-app h3 {
+    color: var(--white-color);
+    font-size: 20px;
+    padding-right: 20px;
+    margin-bottom: 25px;
+}
+.download-app div a {
+    display: inline-block;
+    width: 200px;
+    margin-right: 20px;
+    border: 2px solid #f2f2f2;
+    border-radius: 10px;
+}
+.download-app div img {
+    width: 100%;
+    border-radius: 10px;
+}
+.product {
+    padding: 40px 30px 20px 30px;
+    background-color: var(--white-color);
+    border-radius: 10px;
+    overflow-y: scroll;
+    height: 550px;
+    box-shadow: rgba(0, 0, 0, 1) 0px 8px 24px;
+}
+.order-image {
+    position: relative;
+    z-index: 0;
+}
+.product::-webkit-scrollbar { 
+    display: none; 
+}
+
+.heading-list {
+    margin-bottom: 10px;
+}
+.heading-list a, 
+.heading-list h3 {
+    display: inline-block;
+}
+.heading-list h3 {
+    color: var(--text-color);
+    font-size: 18px;
+}
+.heading-list a {
+    float: right;
+    color: var(--text-color);
+    padding-right: 10px;
+}
+.heading-list span {
+    float: right;
+    margin-left: 8px;
+    transition: .2s ease;
+}
+.heading-list a:hover span {
+    transform: translateX(10px); 
+    color: var(--primary-color);
+}
+.item-product a {
+    border: 1px solid rgb(206, 206, 206);
+    transition: .2s ease;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    background-color: var(--white-color);
+    overflow: hidden;
+}
+.item-product a:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.item-product div img {
+    min-height: 100px;
+    width: 100%;
+}
+.infor-restaurant {
+    padding: 10px;
+}
+.infor-restaurant h4 {
+    color: var(--titel-color);
+    font-size: 17px;
+    display:-webkit-box;
+    -webkit-line-clamp:1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+}
+.infor-restaurant p {
+    color: rgba(0, 0, 0, 0.8);
+    display:-webkit-box;
+    -webkit-line-clamp:1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+}
+.infor-restaurant span {
+    display: block;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+.driver-food {
+    padding: 60px 120px;
+    background-color: #f2f2f2;
+}
+.driver-content {
+    background-color: #FFF;
+    padding: 70px 25px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.driver-content h2 {
+    font-size: 24px;
+    transform: translateX(-27%);
+}
+.driver-content p {
+    margin-bottom: 50px;
+    text-align: left;
+}
+.driver-content img {
+    width: 100%;
+}
+.instruc-cooking { 
+    padding-bottom: 20%;
+    position: relative;
+    overflow-y: hidden;
+}
+.video-bgr {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    bottom: 0px;
+}
+.instruc-content {
+    margin-top: 160px;
+}
+.instruc-content h2 {
+    font-size: 36px;
+    color: var(--white-color);
+}
+.instruc-content p {
+    font-size: 18px;
+    color: var(--white-color);
+}
+.instruc-content a {
+    padding: 8px 20px;
+    margin-top: 20px;
+    color: var(--white-color);
+    border: 2px solid var(--white-color);
+    border-radius: 5px;
+    transition: .3s ease;
+}
+.instruc-content a:hover {
+    background-color: #FFF;
+    color: #000;
+}
+.why-choose {
+    background-color: #f2f2f2;
+    padding: 80px 0 120px;
+}
+.choose-content ul li {
+    margin: 5px 0;
+    padding: 5px 0;
+}
+.choose-content ul li span:nth-child(1) {
+    color: green;
+    font-size: 14px;
+    margin-right: 6px;
+}
+.choose-content ul li span:nth-child(2) {
+    font-weight: 600;
+    color: #000;
+}
+.choose-image {
+    margin-top: 50px;
+}
+.choose-image .col {
+    text-align: center;
+}
+.choose-image .col img {
+    width: 120px;
+    height: 120px;
+}
+.choose-image ul li:nth-child(1) {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 15px 0;
+}
+.choose-image ul li:nth-child(2) {
+    font-size: 16px;
+    padding: 0 20px;
+}
+@media (max-width: 500px) {
+    .order-respon, 
+    .order-image {
+        margin-top: 25px;
+    }
+}
+@media (min-width: 768px) {
+    .instruc-cooking {
+        padding-bottom: 12%;
+    }
+}
+@media (max-width: 767px) {
+    .instruc-cooking {
+        background: url("../img/home/img-1.png");
+        background-size: cover;
+        background-position: center;
+    }
+    .video-bgr {
+        display: none;
+    }
+    .choose-image .row .col {
+        margin-bottom: 30px;
+    }
+    .why-choose {
+        padding: 80px 0 80px;
+    }
+    .driver-food {
+        padding: 60px 0px;
+    }
+    .driver-content h2 {
+        transform: translateX(0%);
+    }
+}
+
+@media (max-width: 992px) {
+    .order-food {
+        padding: 100px 0 80px;
+    }
+    .order-option a {
+        margin: 12px 10px 12px 0px
+    }
+}
+
+@media (max-width: 1199px) {
+    .driver-content {
+        padding: 70px 25px;
+    }
+    .driver-content h2 {
+        font-size: 24px;
+        transform: translateX(0);
+    }
+    .driver-food {
+        padding: 60px 20px;
+        background-color: #f2f2f2;
+    }
+}
+
