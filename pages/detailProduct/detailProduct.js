@@ -26,7 +26,7 @@ HTMLElement.prototype.empty = function() {
 if(details) {
     const item = document.createElement("DIV");
     let localarray = localStorage.getItem("product") 
-    let myarray = localarray === undefined ? [] : eval(localarray).join(",").split`,`.map(x=>+x);
+    let myarray = localarray === null ? [] : eval(localarray).join(",").split`,`.map(x=>+x);
 
     item.classList.add("my-product")
     item.innerHTML = `
