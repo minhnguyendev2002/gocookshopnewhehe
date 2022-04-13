@@ -77,3 +77,4 @@ document.addEventListener("DOMContentLoaded", () => {
         createAccountForm.classList.add("form--hidden");
     });
 })
+localStorage.setItem("product", "[]")
